@@ -358,5 +358,109 @@ h3 {
 }
 
 .how_it_work_wrapper{
-    
+    padding: 64px 0;
+    h2{
+        text-align: center;
+    }
+
+    &>div{
+        position: relative;
+        .purple-eclipse {
+            position: absolute;
+            top: -27%;
+            left: 45%;
+            width: 40%;
+            z-index: 4;
+        }
+    }
+
+    .stepper_wrapper{
+        margin-top: 56px;
+        display: flex;
+        justify-content: center;
+        &>div{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .left-content{
+            &>span{
+                min-height: 88px;
+                position: relative;
+                right: -13px;
+                &:nth-child(2){
+                    top: -8px;
+                }
+                &:nth-child(6){
+                    top: 8px;
+                }
+            }
+
+            .card_tree{
+                border-radius: 34.51px 8.63px 8.63px 8.63px;
+            }
+        }
+
+        .tree{
+            &>span{
+                height: 59px;
+                width: 59px;
+                border-radius: 59px;
+                background-color: #9747FF;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: 500;
+                font-size: 1.25rem;
+                margin-bottom: 55px;
+                position: relative;
+                z-index: 1;
+                &::after{
+                    content: "";
+                    width: 3px;
+                    height: 55px;
+                    background-color: #9747FF;
+                    position: absolute;
+                    bottom: -55px;
+                }
+                &:last-child{
+                    margin-bottom: 0;
+                    &::after{
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        .right-content{
+            &>span{
+                min-height: 88px;
+                position: relative;
+                left: -13px;
+                &:nth-child(1){
+                    top: -15px;
+                }
+                &:nth-child(3){
+                    top: -5px;
+                }
+                &:nth-child(5){
+                    top: 5px;
+                }
+                &:nth-child(7){
+                    top: 15px;
+                }
+            }
+
+            .card_tree{
+                border-radius: 8.63px 34.51px 8.63px 8.63px;
+            }
+
+        }
+
+        .card_tree{
+            border: 1px solid #752CC6C7;
+            padding: 32px 40px 32px 40px;
+            background-color: #9747FF1A;
+        }
+    }
 }

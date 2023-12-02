@@ -327,4 +327,98 @@ h3 {
   margin: 24px 0 0 0;
   line-height: 19.52px;
   color: rgba(255, 255, 255, 0.7490196078);
+}
+
+.how_it_work_wrapper {
+  padding: 64px 0;
+}
+.how_it_work_wrapper h2 {
+  text-align: center;
+}
+.how_it_work_wrapper > div {
+  position: relative;
+}
+.how_it_work_wrapper > div .purple-eclipse {
+  position: absolute;
+  top: -27%;
+  left: 45%;
+  width: 40%;
+  z-index: 4;
+}
+.how_it_work_wrapper .stepper_wrapper {
+  margin-top: 56px;
+  display: flex;
+  justify-content: center;
+}
+.how_it_work_wrapper .stepper_wrapper > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.how_it_work_wrapper .stepper_wrapper .left-content > span {
+  min-height: 88px;
+  position: relative;
+  right: -13px;
+}
+.how_it_work_wrapper .stepper_wrapper .left-content > span:nth-child(2) {
+  top: -8px;
+}
+.how_it_work_wrapper .stepper_wrapper .left-content > span:nth-child(6) {
+  top: 8px;
+}
+.how_it_work_wrapper .stepper_wrapper .left-content .card_tree {
+  border-radius: 34.51px 8.63px 8.63px 8.63px;
+}
+.how_it_work_wrapper .stepper_wrapper .tree > span {
+  height: 59px;
+  width: 59px;
+  border-radius: 59px;
+  background-color: #9747FF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 1.25rem;
+  margin-bottom: 55px;
+  position: relative;
+  z-index: 1;
+}
+.how_it_work_wrapper .stepper_wrapper .tree > span::after {
+  content: "";
+  width: 3px;
+  height: 55px;
+  background-color: #9747FF;
+  position: absolute;
+  bottom: -55px;
+}
+.how_it_work_wrapper .stepper_wrapper .tree > span:last-child {
+  margin-bottom: 0;
+}
+.how_it_work_wrapper .stepper_wrapper .tree > span:last-child::after {
+  display: none;
+}
+.how_it_work_wrapper .stepper_wrapper .right-content > span {
+  min-height: 88px;
+  position: relative;
+  left: -13px;
+}
+.how_it_work_wrapper .stepper_wrapper .right-content > span:nth-child(1) {
+  top: -15px;
+}
+.how_it_work_wrapper .stepper_wrapper .right-content > span:nth-child(3) {
+  top: -5px;
+}
+.how_it_work_wrapper .stepper_wrapper .right-content > span:nth-child(5) {
+  top: 5px;
+}
+.how_it_work_wrapper .stepper_wrapper .right-content > span:nth-child(7) {
+  top: 15px;
+}
+.how_it_work_wrapper .stepper_wrapper .right-content .card_tree {
+  border-radius: 8.63px 34.51px 8.63px 8.63px;
+}
+.how_it_work_wrapper .stepper_wrapper .card_tree {
+  border: 1px solid rgba(117, 44, 198, 0.7803921569);
+  padding: 32px 40px 32px 40px;
+  background-color: rgba(151, 71, 255, 0.1019607843);
 }/*# sourceMappingURL=style.css.map */
