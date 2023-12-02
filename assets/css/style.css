@@ -25,6 +25,8 @@ body {
   padding: 0;
   color: #ffffff;
   font-size: 16px;
+  background-color: #151515;
+  overflow-x: hidden;
 }
 
 * {
@@ -42,6 +44,7 @@ header {
   height: 96px;
   top: 0;
   background-color: rgba(28, 28, 38, 0.9);
+  z-index: 4;
 }
 header nav {
   width: 100%;
@@ -94,9 +97,14 @@ h3 {
 }
 
 .container {
-  max-width: 1500px;
+  max-width: 1450px;
   margin: 0 auto;
-  padding: 0 32px;
+}
+@media (max-width: 1470px) {
+  .container {
+    max-width: unset;
+    padding: 0 32px;
+  }
 }
 
 .howe_wrapper {
@@ -140,7 +148,7 @@ h3 {
 
 .best_wrapper {
   background-color: rgb(21, 21, 21);
-  padding: 60px 0 0 0;
+  padding: 60px 0 60px 0;
 }
 .best_wrapper h2 {
   text-align: center;
@@ -149,30 +157,20 @@ h3 {
 }
 .best_wrapper .card_and_image {
   margin-top: 32px;
-  display: flex;
-  align-items: center;
-}
-.best_wrapper .card_and_image > div:first-child {
-  width: 40%;
-  min-width: 40%;
-}
-.best_wrapper .card_and_image > div:first-child img {
-  max-width: 100%;
 }
 .best_wrapper .card_and_image .card_wrapper {
   display: flex;
   flex-wrap: wrap;
   gap: 25px;
-  margin-left: 20px;
+  justify-content: center;
 }
 .best_wrapper .card_and_image .card_wrapper > div {
   background-color: rgba(117, 44, 198, 0.1);
-  border: 1px solid;
-  border-image-source: linear-gradient(180deg, #752cc6 0%, rgba(255, 188, 80, 0.2) 100%);
+  border: 1px solid rgb(117, 44, 198);
   border-radius: 16px 64px 16px 16px;
-  max-width: 406px;
+  width: 30%;
   padding: 16px;
-  height: 178px;
+  height: 138px;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -187,4 +185,146 @@ h3 {
   line-height: 19.52px;
   margin: 10px 0 0 0;
   color: rgba(255, 255, 255, 0.75);
+}
+
+.video_wrapper {
+  background-image: url("../images/bg-video.png");
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.para_wrapper {
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: 90% 65%;
+  background-size: contain;
+}
+.para_wrapper.boy_jump {
+  background-image: url("../images/boy-jump.png");
+}
+.para_wrapper.boy_jump .purple-eclipse {
+  position: absolute;
+  top: -30%;
+  left: 45%;
+  width: 40%;
+}
+.para_wrapper.boy_jump .purple-2-eclipse {
+  position: absolute;
+  bottom: -30%;
+  right: -10%;
+  width: 40%;
+  z-index: 4;
+}
+.para_wrapper.boy_jump .yellow-eclipse {
+  position: absolute;
+  left: 0;
+  bottom: 0%;
+  width: 40%;
+}
+.para_wrapper.girl_top_hand {
+  background-image: url("../images/girl-top-hand.png");
+}
+.para_wrapper.girl_top_hand .purple-eclipse {
+  position: absolute;
+  top: -30%;
+  left: 45%;
+  width: 40%;
+  z-index: 4;
+}
+.para_wrapper > div {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  min-height: 100vh;
+}
+.para_wrapper > div h2 {
+  max-width: 880px;
+}
+.para_wrapper > div p {
+  font-size: 1.125rem;
+  line-height: 28.8px;
+  position: relative;
+  padding-left: 32px;
+  max-width: 880px;
+}
+.para_wrapper > div p::after {
+  content: "";
+  width: 4px;
+  height: 100%;
+  background-color: rgb(255, 145, 77);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.adventure_wrapper {
+  padding: 64px 0;
+  background-image: url("../images/city.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.adventure_wrapper::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url("../images/boy-run.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  top: 0;
+  z-index: 1;
+}
+.adventure_wrapper > .container {
+  z-index: 2;
+  position: relative;
+}
+.adventure_wrapper > .overlay {
+  background-color: rgba(21, 21, 21, 0.9215686275);
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+.adventure_wrapper .adventure_container h2 {
+  max-width: 490px;
+  position: relative;
+  bottom: -90px;
+}
+.adventure_wrapper .card_adventure_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.adventure_wrapper .card_adventure_wrapper > div {
+  width: 37%;
+}
+.adventure_wrapper .card_adventure_wrapper .card_adventure {
+  margin-bottom: 42px;
+  background-color: rgba(25, 24, 22, 0.3019607843);
+  height: 195px;
+  border: 1px solid #731996;
+  border-radius: 16px 64px 16px 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 32px;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+.adventure_wrapper .card_adventure_wrapper .card_adventure > h3 {
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 28.8px;
+}
+.adventure_wrapper .card_adventure_wrapper .card_adventure > p {
+  margin: 24px 0 0 0;
+  line-height: 19.52px;
+  color: rgba(255, 255, 255, 0.7490196078);
 }/*# sourceMappingURL=style.css.map */
