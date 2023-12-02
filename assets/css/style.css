@@ -63,7 +63,23 @@ header nav ul {
   justify-content: center;
 }
 header nav ul li {
-  padding: 0 32px;
+  padding: 0 16px;
+}
+header nav ul li a {
+  position: relative;
+}
+header nav ul li a::after {
+  content: "";
+  position: absolute;
+  background-color: rgb(117, 44, 198);
+  height: 4px;
+  width: 0px;
+  left: 0;
+  bottom: -10px;
+  transition: width 0.3s;
+}
+header nav ul li a:hover::after {
+  width: 40px;
 }
 header nav .join-us {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(275.28deg, #2944b5 -44.76%, #752cc6 161.3%), linear-gradient(180deg, #9747ff 0%, rgba(151, 71, 255, 0) 39.42%);
@@ -833,6 +849,22 @@ footer .bottom-content > div:first-child ul {
 }
 footer .bottom-content > div:first-child ul.menu-footer > li {
   padding-right: 32px;
+}
+footer .bottom-content > div:first-child ul.menu-footer > li a {
+  position: relative;
+}
+footer .bottom-content > div:first-child ul.menu-footer > li a::after {
+  content: "";
+  position: absolute;
+  background-color: rgb(117, 44, 198);
+  height: 4px;
+  width: 0px;
+  left: 0;
+  bottom: -10px;
+  transition: width 0.3s;
+}
+footer .bottom-content > div:first-child ul.menu-footer > li a:hover::after {
+  width: 40px;
 }
 footer .bottom-content > div:first-child ul.social-link > li {
   padding-right: 40px;

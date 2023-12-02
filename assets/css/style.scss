@@ -71,7 +71,25 @@ header {
             align-items: center;
             justify-content: center;
             li {
-                padding: 0 32px;
+                padding: 0 16px;
+                a {
+                    position: relative;
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        background-color: rgba(117, 44, 198, 1);
+                        height: 4px;
+                        width: 0px;
+                        left: 0;
+                        bottom: -10px;
+                        transition: width 0.3s;
+                    }
+                    &:hover {
+                        &::after {
+                            width: 40px;
+                        }
+                    }
+                }
             }
         }
 
@@ -890,7 +908,7 @@ footer {
                 border: none;
                 width: 100%;
                 font-family: "Now";
-                &:focus-visible{
+                &:focus-visible {
                     outline: none;
                 }
             }
@@ -900,7 +918,7 @@ footer {
                     width: unset;
                 }
 
-                &>input:first-of-type{
+                & > input:first-of-type {
                     margin-left: 0;
                 }
             }
@@ -924,6 +942,24 @@ footer {
                 &.menu-footer {
                     & > li {
                         padding-right: 32px;
+                        a {
+                            position: relative;
+                            &::after {
+                                content: "";
+                                position: absolute;
+                                background-color: rgba(117, 44, 198, 1);
+                                height: 4px;
+                                width: 0px;
+                                left: 0;
+                                bottom: -10px;
+                                transition: width 0.3s;
+                            }
+                            &:hover {
+                                &::after {
+                                    width: 40px;
+                                }
+                            }
+                        }
                     }
                 }
 
