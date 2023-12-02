@@ -664,8 +664,64 @@ h3 {
     }
 }
 
+.team_wrapper {
+    background-image: url("../images/world-lune.png");
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+
+    .team_content {
+        position: relative;
+        z-index: 1;
+        border-radius: 32px 128px 32px 32px;
+        border: 1px solid rgba(167, 20, 214, 1);
+        // background: linear-gradient(268.58deg, rgba(13, 7, 20, 0.7) 44.42%, rgba(0, 0, 0, 0) 73.19%),
+        //     linear-gradient(180deg, #a714d6 0%, rgba(255, 188, 80, 0) 100%);
+        max-height: 800px;
+        height: 800px;
+        background-image: url("../images/world-lune.png");
+        background-size: 109%;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: center;
+        padding: 0 32px 32px 32px;
+        background-position-y: 56%;
+        background-position-x: 1%;
+        .image-team {
+            width: 40%;
+            img {
+                position: relative;
+                top: -34px;
+                left: -220px;
+            }
+        }
+
+        .text-team {
+            width: 60%;
+            margin-left: 118px;
+            p {
+                font-size: 1.125rem;
+                line-height: 21.96px;
+                margin: 48px 0;
+            }
+
+            .btn-contact-us {
+                background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+                    linear-gradient(275.28deg, #ff914d -44.76%, #b84022 161.3%);
+                border-radius: 1rem;
+                padding: 16px 32px;
+                text-transform: uppercase;
+                font-weight: 900;
+                font-size: 0.875rem;
+                border: 3px solid rgba(0, 0, 0, 0.2);
+            }
+        }
+    }
+}
+
 .overlay {
-    background-color: #151515eb;
+    background-color: #151515dd;
     position: absolute;
     top: 0;
     width: 100%;
