@@ -43,6 +43,7 @@ body {
 * {
     box-sizing: border-box;
 }
+
 a {
     color: inherit;
     text-decoration: none;
@@ -226,7 +227,7 @@ h3 {
             left: 45%;
             width: 40%;
         }
-    
+
         .purple-2-eclipse {
             position: absolute;
             bottom: -30%;
@@ -234,7 +235,7 @@ h3 {
             width: 40%;
             z-index: 4;
         }
-    
+
         .yellow-eclipse {
             position: absolute;
             left: 0;
@@ -243,7 +244,7 @@ h3 {
         }
     }
 
-    &.girl_top_hand{
+    &.girl_top_hand {
         background-image: url("../images/girl-top-hand.png");
         .purple-eclipse {
             position: absolute;
@@ -357,13 +358,13 @@ h3 {
     }
 }
 
-.how_it_work_wrapper{
-    padding: 64px 0;
-    h2{
+.how_it_work_wrapper {
+    padding: 120px 0;
+    h2 {
         text-align: center;
     }
 
-    &>div{
+    & > div {
         position: relative;
         .purple-eclipse {
             position: absolute;
@@ -374,39 +375,39 @@ h3 {
         }
     }
 
-    .stepper_wrapper{
+    .stepper_wrapper {
         margin-top: 56px;
         display: flex;
         justify-content: center;
-        &>div{
+        & > div {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
         }
-        .left-content{
-            &>span{
+        .left-content {
+            & > span {
                 min-height: 88px;
                 position: relative;
                 right: -13px;
-                &:nth-child(2){
+                &:nth-child(2) {
                     top: -8px;
                 }
-                &:nth-child(6){
+                &:nth-child(6) {
                     top: 8px;
                 }
             }
 
-            .card_tree{
+            .card_tree {
                 border-radius: 34.51px 8.63px 8.63px 8.63px;
             }
         }
 
-        .tree{
-            &>span{
+        .tree {
+            & > span {
                 height: 59px;
                 width: 59px;
                 border-radius: 59px;
-                background-color: #9747FF;
+                background-color: #9747ff;
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -415,52 +416,121 @@ h3 {
                 margin-bottom: 55px;
                 position: relative;
                 z-index: 1;
-                &::after{
+                &::after {
                     content: "";
                     width: 3px;
                     height: 55px;
-                    background-color: #9747FF;
+                    background-color: #9747ff;
                     position: absolute;
                     bottom: -55px;
                 }
-                &:last-child{
+                &:last-child {
                     margin-bottom: 0;
-                    &::after{
+                    &::after {
                         display: none;
                     }
                 }
             }
         }
 
-        .right-content{
-            &>span{
+        .right-content {
+            & > span {
                 min-height: 88px;
                 position: relative;
                 left: -13px;
-                &:nth-child(1){
+                &:nth-child(1) {
                     top: -15px;
                 }
-                &:nth-child(3){
+                &:nth-child(3) {
                     top: -5px;
                 }
-                &:nth-child(5){
+                &:nth-child(5) {
                     top: 5px;
                 }
-                &:nth-child(7){
+                &:nth-child(7) {
                     top: 15px;
                 }
             }
 
-            .card_tree{
+            .card_tree {
                 border-radius: 8.63px 34.51px 8.63px 8.63px;
             }
-
         }
 
-        .card_tree{
-            border: 1px solid #752CC6C7;
+        .card_tree {
+            border: 1px solid #752cc6c7;
             padding: 32px 40px 32px 40px;
-            background-color: #9747FF1A;
+            background-color: #9747ff1a;
+        }
+    }
+}
+
+.elite_wrapper {
+    padding-top: 200px;
+
+    .banner-elite {
+        border-radius: 32px 128px 32px 32px;
+        max-height: 530px;
+        height: 530px;
+        background-image: url("../images/space-bg.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-y: 55%;
+        border: 1px solid #e0d0b6;
+        position: relative;
+        .banner_content {
+            display: flex;
+            align-items: center;
+            height: 100%;
+            h3 {
+                font-family: "Orbitron";
+                font-weight: 900;
+                font-size: 3rem;
+                color: rgba(255, 145, 77, 1);
+                text-transform: uppercase;
+                margin-left: -4%;
+            }
+
+            p {
+                margin: 22px 0;
+            }
+
+            .btn-start {
+                background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+                    linear-gradient(275.28deg, #ff914d -44.76%, #b84022 161.3%);
+                border: 3px solid rgba(0, 0, 0, 0.2);
+                border-radius: 16px;
+                padding: 16px 32px;
+                text-transform: uppercase;
+                font-weight: 900;
+                font-size: 0.875rem;
+                display: flex;
+                width: fit-content;
+            }
+
+            .elite-run {
+                width: 28.5%;
+                img {
+                    position: relative;
+                    left: -30%;
+                    top: -98px;
+                }
+            }
+        }
+        .yellow-eclipse {
+            position: absolute;
+            left: -114px;
+            bottom: -4%;
+            width: 11%;
+            z-index: 4;
+        }
+
+        .purple-eclipse {
+            position: absolute;
+            width: 50%;
+            top: -343px;
+            z-index: 4;
+            right: 0;
         }
     }
 }
