@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SportyPlay</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 
 <body>
@@ -35,6 +38,47 @@
                     Rejoins la révolution du sport virtuel avec ce jeu de sport mobile
                 </p>
                 <a href="#" class="btn-play">COMMENCER à jouer</a>
+            </div>
+            <div class="marquee-container">
+                <!-- Slider main container -->
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="content-swip"><img src="./assets/images/inject.png" alt="Arrow"><span>Deviens un
+                                    héros du fitness</span></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="content-swip"><img src="./assets/images/inject.png" alt="Arrow"><span>Inspire
+                                    tes amis</span></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="content-swip"><img src="./assets/images/inject.png" alt="Arrow"><span>Écris ton
+                                    propre récit de succès</span></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="content-swip"><img src="./assets/images/inject.png" alt="Arrow"><span>Rejoins
+                                    tous les amateurs de fitness</span></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="content-swip"><img src="./assets/images/inject.png" alt="Arrow"><span>Deviens un
+                                    héros du fitness</span></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="content-swip"><img src="./assets/images/inject.png" alt="Arrow"><span>Inspire
+                                    tes amis</span></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="content-swip"><img src="./assets/images/inject.png" alt="Arrow"><span>Écris ton
+                                    propre récit de succès</span></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="content-swip"><img src="./assets/images/inject.png" alt="Arrow"><span>Rejoins
+                                    tous les amateurs de fitness</span></div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         <section id="best-sport" class="best_wrapper">
@@ -615,6 +659,19 @@
             content.style.maxHeight = content.style.maxHeight ? null : content.scrollHeight + "px";
 
         }
+
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            direction: 'horizontal',
+            spaceBetween: 0,
+            slidesPerView: 3,
+            loop: true,
+            allowTouchMove: false,
+            autoplay: {
+                delay: 1,
+            },
+            speed: 15000,
+        });
     </script>
 </body>
 

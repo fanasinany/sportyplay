@@ -52,6 +52,7 @@ header nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 header nav ul {
   display: flex;
@@ -135,10 +136,10 @@ h3 {
 
 .howe_wrapper {
   background-image: url("../images/home-bg.png");
-  height: 100vh;
   background-size: cover;
 }
 .howe_wrapper > div:first-child {
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -171,10 +172,48 @@ h3 {
   justify-content: center;
   border: 3px solid #783acc;
 }
+.howe_wrapper .marquee-container {
+  height: 96px;
+  background: linear-gradient(91.31deg, #9747ff 14.28%, #ff914d 87.82%);
+  width: calc(100% + 12px);
+  transform: rotate(-2.9deg);
+  margin-right: 4px;
+  position: relative;
+  left: -6px;
+}
+.howe_wrapper .marquee-container::after {
+  content: "";
+  background-color: #151515;
+  position: absolute;
+  width: 50%;
+  height: 96px;
+  right: 0;
+}
+.howe_wrapper .marquee-container .swiper {
+  height: 96px;
+}
+.howe_wrapper .marquee-container .swiper-slide {
+  width: -moz-max-content !important;
+  width: max-content !important;
+}
+.howe_wrapper .marquee-container .content-swip {
+  display: flex;
+  align-items: center;
+  height: 96px;
+  width: auto !important;
+  padding: 0 20px;
+}
+.howe_wrapper .marquee-container .content-swip > span {
+  font-weight: 800;
+  font-size: 1.25rem;
+  font-family: "Orbitron";
+  text-transform: uppercase;
+  white-space: nowrap;
+}
 
 .best_wrapper {
   background-color: rgb(21, 21, 21);
-  padding: 60px 0 60px 0;
+  padding: 180px 0;
 }
 .best_wrapper h2 {
   text-align: center;
