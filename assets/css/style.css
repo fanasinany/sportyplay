@@ -138,6 +138,29 @@ h3 {
   background-image: url("../images/home-bg.png");
   background-size: cover;
 }
+.howe_wrapper .girl-top {
+  position: absolute;
+  bottom: -40px;
+  left: 40px;
+  width: 30%;
+  z-index: 1;
+}
+.howe_wrapper .boy-top {
+  position: absolute;
+  bottom: -40px;
+  right: 40px;
+  width: 30%;
+  z-index: 1;
+}
+.howe_wrapper .lightning-image {
+  position: absolute;
+  top: 0;
+  right: -13%;
+  width: 35%;
+}
+.howe_wrapper .container {
+  position: relative;
+}
 .howe_wrapper > div:first-child {
   min-height: 100vh;
   display: flex;
@@ -151,6 +174,7 @@ h3 {
 .howe_wrapper h1 {
   max-width: 1250px;
   margin: 0;
+  z-index: 2;
 }
 .howe_wrapper p {
   font-size: 1.25rem;
@@ -158,6 +182,7 @@ h3 {
   max-width: 700px;
   line-height: 32px;
   margin: 24px 0 40px 0;
+  z-index: 2;
 }
 .howe_wrapper .btn-play {
   text-transform: uppercase;
@@ -171,6 +196,7 @@ h3 {
   align-items: center;
   justify-content: center;
   border: 3px solid #783acc;
+  z-index: 2;
 }
 .howe_wrapper .marquee-container {
   height: 96px;
@@ -180,6 +206,7 @@ h3 {
   margin-right: 4px;
   position: relative;
   left: -6px;
+  z-index: 3;
 }
 .howe_wrapper .marquee-container::after {
   content: "";

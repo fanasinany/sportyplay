@@ -151,6 +151,33 @@ h3 {
     background-image: url("../images/home-bg.png");
     background-size: cover;
 
+    .girl-top {
+        position: absolute;
+        bottom: -40px;
+        left: 40px;
+        width: 30%;
+        z-index: 1;
+    }
+
+    .boy-top {
+        position: absolute;
+        bottom: -40px;
+        right: 40px;
+        width: 30%;
+        z-index: 1;
+    }
+
+    .lightning-image {
+        position: absolute;
+        top: 0;
+        right: -13%;
+        width: 35%;
+    }
+
+    .container {
+        position: relative;
+    }
+
     & > div:first-child {
         min-height: 100vh;
         display: flex;
@@ -164,6 +191,7 @@ h3 {
     h1 {
         max-width: 1250px;
         margin: 0;
+        z-index: 2;
     }
 
     p {
@@ -172,6 +200,7 @@ h3 {
         max-width: 700px;
         line-height: 32px;
         margin: 24px 0 40px 0;
+        z-index: 2;
     }
 
     .btn-play {
@@ -188,6 +217,7 @@ h3 {
         align-items: center;
         justify-content: center;
         border: 3px solid #783acc;
+        z-index: 2;
     }
 
     .marquee-container {
@@ -198,7 +228,8 @@ h3 {
         margin-right: 4px;
         position: relative;
         left: -6px;
-        &::after{
+        z-index: 3;
+        &::after {
             content: "";
             background-color: #151515;
             position: absolute;
@@ -211,8 +242,8 @@ h3 {
             height: 96px;
         }
 
-        .swiper-slide{
-            width: max-content!important;
+        .swiper-slide {
+            width: max-content !important;
         }
 
         .content-swip {
