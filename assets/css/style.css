@@ -69,13 +69,13 @@ header nav ul {
   align-items: center;
   justify-content: center;
 }
-header nav ul li {
+header nav ul > li {
   padding: 0 16px;
 }
-header nav ul li a {
+header nav ul > li a {
   position: relative;
 }
-header nav ul li a::after {
+header nav ul > li a::after {
   content: "";
   position: absolute;
   background-color: rgb(117, 44, 198);
@@ -85,8 +85,17 @@ header nav ul li a::after {
   bottom: -10px;
   transition: width 0.3s;
 }
-header nav ul li a:hover::after {
+header nav ul > li a:hover::after {
   width: 40px;
+}
+header nav ul > li:first-of-type {
+  padding-left: 0;
+}
+header nav ul > li:last-of-type {
+  padding-right: 0;
+}
+header nav ul > li.show-mobile {
+  display: none;
 }
 header nav .join-us {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(275.28deg, #2944b5 -44.76%, #752cc6 161.3%), linear-gradient(180deg, #9747ff 0%, rgba(151, 71, 255, 0) 39.42%);
@@ -109,6 +118,71 @@ header nav .join-us::before {
   width: calc(100% + 6px);
   height: calc(100% + 6px);
   border-radius: 16px;
+}
+header nav .menu-burger {
+  background-color: transparent;
+  border: none;
+  display: none;
+}
+@media (max-width: 1385px) {
+  header nav img {
+    height: 70px;
+  }
+  header nav > ul li {
+    padding: 0 12px;
+  }
+}
+@media (max-width: 1250px) {
+  header nav > ul li {
+    font-size: 0.875rem;
+  }
+}
+@media (max-width: 1130px) {
+  header nav > ul {
+    display: none;
+  }
+  header nav > ul.active-mobile {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(28, 28, 38, 0.9);
+    position: absolute;
+    top: 96px;
+    width: 100%;
+    left: 0;
+    height: unset;
+    -webkit-backdrop-filter: blur(4px);
+            backdrop-filter: blur(4px);
+  }
+  header nav > ul.active-mobile > li {
+    padding: 16px 0;
+    font-size: 1rem;
+  }
+  header nav > ul.active-mobile > li a::after {
+    left: calc(50% - 20px);
+  }
+  header nav .menu-burger {
+    display: flex;
+    margin-left: 12px;
+    cursor: pointer;
+  }
+  header nav .btn_and_menu {
+    display: flex;
+    align-items: center;
+  }
+}
+@media (max-width: 600px) {
+  header nav img {
+    height: 60px;
+  }
+  header nav ul > li.show-mobile {
+    display: flex;
+  }
+  header nav ul > li.show-mobile .join-us {
+    display: flex;
+  }
+  header nav .join-us {
+    display: none;
+  }
 }
 
 h1,
@@ -136,6 +210,11 @@ h3 {
   .container {
     max-width: unset;
     padding: 0 32px;
+  }
+}
+@media (max-width: 1250px) {
+  .container {
+    padding: 0 16px;
   }
 }
 

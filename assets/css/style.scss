@@ -76,7 +76,7 @@ header {
             height: 100%;
             align-items: center;
             justify-content: center;
-            li {
+            & > li {
                 padding: 0 16px;
                 a {
                     position: relative;
@@ -95,6 +95,17 @@ header {
                             width: 40px;
                         }
                     }
+                }
+                &:first-of-type {
+                    padding-left: 0;
+                }
+
+                &:last-of-type {
+                    padding-right: 0;
+                }
+
+                &.show-mobile{
+                    display: none;
                 }
             }
         }
@@ -124,6 +135,97 @@ header {
                 border-radius: 16px;
             }
         }
+
+        .menu-burger {
+            background-color: transparent;
+            border: none;
+            display: none;
+        }
+    }
+
+    @media (max-width: 1385px) {
+        nav {
+            img {
+                height: 70px;
+            }
+            & > ul {
+                li {
+                    padding: 0 12px;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 1250px) {
+        nav {
+            & > ul {
+                li {
+                    font-size: 0.875rem;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 1130px) {
+        nav {
+            & > ul {
+                display: none;
+                &.active-mobile {
+                    display: flex;
+                    flex-direction: column;
+                    background-color: rgba(28, 28, 38, 0.9);
+                    position: absolute;
+                    top: 96px;
+                    width: 100%;
+                    left: 0;
+                    height: unset;
+                    backdrop-filter: blur(4px);
+                    & > li {
+                        padding: 16px 0;
+                        font-size: 1rem;
+                        a {
+                            &::after {
+                                left: calc(50% - 20px);
+                            }
+                        }
+                    }
+                }
+            }
+            .menu-burger {
+                display: flex;
+                margin-left: 12px;
+                cursor: pointer;
+            }
+
+            .btn_and_menu {
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+
+    @media (max-width:600px) {
+        nav{
+            img{
+                height: 60px;
+            }
+
+            ul{
+                &>li{
+                    &.show-mobile{
+                        display: flex;
+                        .join-us{
+                            display: flex;
+                        }
+                    }
+                }
+            }
+
+            .join-us{
+                display: none;
+            }
+
+        }
     }
 }
 
@@ -149,6 +251,10 @@ h3 {
     @media (max-width: 1470px) {
         max-width: unset;
         padding: 0 32px;
+    }
+
+    @media (max-width: 1250px) {
+        padding: 0 16px;
     }
 }
 
