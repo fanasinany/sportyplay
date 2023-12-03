@@ -1234,10 +1234,27 @@ header nav .menu-burger {
   margin: 0;
   max-height: 0;
   transition: max-height 0.3s ease-out;
+  padding-top: 12px;
 }
 .faq_wrapper .card_faq_wrapper .card_faq.active .answer {
   height: -moz-fit-content;
   height: fit-content;
+}
+@media (max-width: 900px) {
+  .faq_wrapper h2 {
+    font-size: 4rem;
+  }
+  .faq_wrapper .card_faq_wrapper {
+    flex-direction: column;
+    gap: 24px 0;
+  }
+  .faq_wrapper .card_faq_wrapper .card_faq {
+    width: 100%;
+    padding: 16px;
+  }
+  .faq_wrapper .card_faq_wrapper .card_faq .question span {
+    font-size: 1rem;
+  }
 }
 
 footer {

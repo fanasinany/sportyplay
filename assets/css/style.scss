@@ -1366,11 +1366,31 @@ header {
                 margin: 0;
                 max-height: 0;
                 transition: max-height 0.3s ease-out;
+                padding-top: 12px;
             }
 
             &.active {
                 .answer {
                     height: fit-content;
+                }
+            }
+        }
+    }
+
+    @media(max-width: 900px){
+        h2{
+            font-size: 4rem;
+        }
+        .card_faq_wrapper{
+            flex-direction: column;
+            gap: 24px 0;
+            .card_faq{
+                width: 100%;
+                padding: 16px;
+                .question{
+                    span{
+                        font-size: 1rem;
+                    }
                 }
             }
         }
