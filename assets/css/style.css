@@ -269,7 +269,11 @@ h3 {
 
 .best_wrapper {
   background-color: rgb(21, 21, 21);
-  padding: 180px 0 340px 0;
+  padding: 180px 0 250px 0;
+  background-image: url("../images/girl-objectif-1.png");
+  background-repeat: no-repeat;
+  background-position-x: 95%;
+  background-position-y: bottom;
 }
 .best_wrapper h2 {
   text-align: center;
@@ -278,6 +282,7 @@ h3 {
 }
 .best_wrapper .card_and_image {
   margin-top: 135px;
+  width: 80%;
 }
 .best_wrapper .card_and_image .card_wrapper {
   display: flex;
@@ -286,6 +291,8 @@ h3 {
   justify-content: center;
 }
 .best_wrapper .card_and_image .card_wrapper > div {
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
   background-color: rgba(117, 44, 198, 0.1);
   border: 1px solid rgb(117, 44, 198);
   border-radius: 16px 64px 16px 16px;
