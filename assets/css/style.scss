@@ -532,11 +532,28 @@ header {
 
 .video_wrapper {
     background-image: url("../images/bg-video.png");
-    height: 100vh;
+    height: 99vh;
     background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-position: center;
+    img {
+        position: relative;
+        left: -12px;
+    }
+
+    @media (max-width: 900px) {
+        height: 500px;
+        img {
+            left: -6px;
+            height: 100px;
+        }
+    }
+
+    @media (max-width: 650px) {
+        height: 400px;
+    }
 }
 
 .para_wrapper {
@@ -582,7 +599,6 @@ header {
         display: flex;
         justify-content: center;
         flex-direction: column;
-        height: 100%;
         min-height: 100vh;
         h2 {
             max-width: 880px;
@@ -604,11 +620,34 @@ header {
             }
         }
     }
+
+    @media (max-width: 1400px) {
+        background-position: right;
+        background-size: 40%;
+        & > div {
+            padding-top: 160px;
+            padding-bottom: 160px;
+            min-height: unset;
+        }
+    }
+
+    @media (max-width: 800px) {
+        &.boy_jump {
+            background-image: none;
+        }
+
+        &.girl_top_hand {
+            background-image: none;
+        }
+        & > div {
+            padding-top: 80px;
+            padding-bottom: 80px;
+        }
+    }
 }
 
 .adventure_wrapper {
     padding: 64px 0;
-    // min-height: 100vh;
     background-image: url("../images/city.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -629,15 +668,6 @@ header {
         z-index: 2;
         position: relative;
     }
-
-    // & > .overlay {
-    //     background-color: #151515eb;
-    //     position: absolute;
-    //     top: 0;
-    //     width: 100%;
-    //     height: 100%;
-    //     z-index: 0;
-    // }
 
     .adventure_container {
         h2 {
@@ -676,6 +706,54 @@ header {
                 margin: 24px 0 0 0;
                 line-height: 19.52px;
                 color: #ffffffbf;
+            }
+        }
+    }
+
+    @media (max-width: 1200px) {
+        .adventure_container {
+            h2 {
+                bottom: unset;
+            }
+        }
+        .card_adventure_wrapper {
+            & > div {
+                width: 40%;
+            }
+            .card_adventure {
+                height: unset;
+                & > h3 {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 980px) {
+        .card_adventure_wrapper {
+            & > div {
+                width: 48%;
+            }
+            .card_adventure {
+                padding: 20px;
+            }
+        }
+    }
+
+    @media (max-width: 700px) {
+        .adventure_container {
+            h2 {
+                max-width: unset;
+            }
+        }
+        .card_adventure_wrapper {
+            margin-top: 42px;
+            flex-wrap: wrap;
+            & > div {
+                width: 100%;
+            }
+            .card_adventure {
+                padding: 20px;
             }
         }
     }
