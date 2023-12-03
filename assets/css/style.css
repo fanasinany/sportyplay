@@ -896,6 +896,15 @@ footer .container {
   position: relative;
   padding-top: 128px;
 }
+footer .shape {
+  background-color: rgba(21, 21, 21, 0.4509803922);
+  height: 400px;
+  border-radius: 0 0 100% 100%;
+  position: absolute;
+  width: 100%;
+  transform: scale(1.1);
+  top: 20px;
+}
 footer form {
   background-color: rgba(117, 117, 117, 0.1882352941);
   -webkit-backdrop-filter: blur(10px);
@@ -912,9 +921,11 @@ footer form {
 }
 footer form .yellow-eclipse {
   left: -40%;
+  z-index: -1;
 }
 footer form .purple-eclipse {
   right: -53%;
+  z-index: -1;
 }
 footer form button {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(275.28deg, #2944b5 -44.76%, #752cc6 161.3%), linear-gradient(180deg, #9747ff 0%, rgba(151, 71, 255, 0) 39.42%);
