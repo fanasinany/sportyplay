@@ -1150,8 +1150,8 @@ header nav .menu-burger {
 }
 .team_wrapper .team_content .image-team img {
   position: relative;
-  top: -34px;
   left: -220px;
+  height: 800px;
 }
 .team_wrapper .team_content .text-team {
   width: 60%;
@@ -1170,6 +1170,59 @@ header nav .menu-burger {
   font-weight: 900;
   font-size: 0.875rem;
   border: 3px solid rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 1400px) {
+  .team_wrapper .team_content .text-team {
+    margin-left: 60px;
+  }
+  .team_wrapper .team_content .image-team img {
+    left: -120px;
+    height: 550px;
+    top: 80px;
+  }
+}
+@media (max-width: 1150px) {
+  .team_wrapper .team_content .text-team {
+    margin-left: 20px;
+  }
+  .team_wrapper .team_content .image-team img {
+    height: 450px;
+  }
+}
+@media (max-width: 990px) {
+  .team_wrapper .team_content {
+    height: unset;
+    max-height: unset;
+    background-size: cover;
+    flex-direction: column;
+  }
+  .team_wrapper .team_content .text-team {
+    margin-left: 0;
+    width: 100%;
+    position: relative;
+    top: -20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .team_wrapper .team_content .image-team {
+    width: unset;
+  }
+  .team_wrapper .team_content .image-team img {
+    left: unset;
+    top: -80px;
+  }
+}
+@media (max-width: 490px) {
+  .team_wrapper .team_content {
+    padding: 0 16px 16px 16px;
+  }
+  .team_wrapper .team_content .text-team {
+    top: -40px;
+  }
+  .team_wrapper .team_content .image-team img {
+    height: 300px;
+  }
 }
 
 .faq_wrapper {

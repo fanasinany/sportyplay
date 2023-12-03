@@ -1276,8 +1276,8 @@ header {
             width: 40%;
             img {
                 position: relative;
-                top: -34px;
                 left: -220px;
+                height: 800px;
             }
         }
 
@@ -1299,6 +1299,73 @@ header {
                 font-weight: 900;
                 font-size: 0.875rem;
                 border: 3px solid rgba(0, 0, 0, 0.2);
+            }
+        }
+    }
+
+    @media (max-width: 1400px) {
+        .team_content {
+            .text-team {
+                margin-left: 60px;
+            }
+            .image-team {
+                img {
+                    left: -120px;
+                    height: 550px;
+                    top: 80px;
+                }
+            }
+        }
+    }
+    @media (max-width: 1150px) {
+        .team_content {
+            .text-team {
+                margin-left: 20px;
+            }
+            .image-team {
+                img {
+                    height: 450px;
+                }
+            }
+        }
+    }
+
+    @media(max-width:990px){
+        .team_content{
+            height: unset;
+            max-height: unset;
+            background-size: cover;
+            flex-direction: column;
+            .text-team{
+                margin-left: 0;
+                width: 100%;
+                position: relative;
+                top: -20px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .image-team {
+                width: unset;
+                img {
+                    left: unset;
+                    top: -80px;
+                }
+            }
+        }
+
+    }
+
+    @media (max-width: 490px) {
+        .team_content {
+            padding: 0 16px 16px 16px;
+            .text-team{
+                top: -40px;
+            }
+            .image-team {
+                img {
+                    height: 300px;
+                }
             }
         }
     }
@@ -1377,18 +1444,18 @@ header {
         }
     }
 
-    @media(max-width: 900px){
-        h2{
+    @media (max-width: 900px) {
+        h2 {
             font-size: 4rem;
         }
-        .card_faq_wrapper{
+        .card_faq_wrapper {
             flex-direction: column;
             gap: 24px 0;
-            .card_faq{
+            .card_faq {
                 width: 100%;
                 padding: 16px;
-                .question{
-                    span{
+                .question {
+                    span {
                         font-size: 1rem;
                     }
                 }
@@ -1622,10 +1689,10 @@ footer {
             & > div:last-child > *:last-child {
                 display: flex;
                 flex-direction: column;
-                &>a{
+                & > a {
                     margin-left: 0;
                     text-align: center;
-                    &:last-of-type{
+                    &:last-of-type {
                         margin-top: 28px;
                     }
                 }
