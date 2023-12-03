@@ -880,7 +880,7 @@ header {
     }
 
     @media (max-width: 550px) {
-        h2{
+        h2 {
             text-align: start;
         }
         .stepper_wrapper {
@@ -1171,6 +1171,22 @@ header {
                     z-index: -1;
                     border-radius: 16px 64px 16px 16px;
                 }
+            }
+        }
+    }
+
+    @media (max-width: 1100px) {
+        padding: 80px 0 80px 0;
+        .card_pack_wrapper {
+            margin-top: 140px;
+        }
+    }
+    @media (max-width: 870px) {
+        .card_pack_wrapper {
+            flex-direction: column;
+            align-items: center;
+            & > div {
+                margin-bottom: 96px;
             }
         }
     }

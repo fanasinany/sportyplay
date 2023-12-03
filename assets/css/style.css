@@ -1050,6 +1050,23 @@ header nav .menu-burger {
   z-index: -1;
   border-radius: 16px 64px 16px 16px;
 }
+@media (max-width: 1100px) {
+  .pack_wrapper {
+    padding: 80px 0 80px 0;
+  }
+  .pack_wrapper .card_pack_wrapper {
+    margin-top: 140px;
+  }
+}
+@media (max-width: 870px) {
+  .pack_wrapper .card_pack_wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .pack_wrapper .card_pack_wrapper > div {
+    margin-bottom: 96px;
+  }
+}
 
 .team_wrapper {
   background-image: url("../images/world-lune.png");
