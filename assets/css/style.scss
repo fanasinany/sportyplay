@@ -1033,7 +1033,7 @@ header {
                 .elite-run {
                     display: none;
                 }
-                &>div:last-of-type{
+                & > div:last-of-type {
                     display: flex;
                     flex-direction: column;
                     align-items: center;
@@ -1046,7 +1046,7 @@ header {
         }
     }
 
-    @media(max-width: 450px){
+    @media (max-width: 450px) {
         .banner-elite {
             height: 550px;
             max-height: 550px;
@@ -1488,6 +1488,17 @@ footer {
                 }
             }
         }
+
+        @media (max-width: 700px) {
+            padding: 32px;
+            & > div {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 400px) {
+            padding: 16px;
+        }
     }
 
     .bottom-content {
@@ -1525,12 +1536,18 @@ footer {
                                 }
                             }
                         }
+                        &:last-child {
+                            padding-right: 0;
+                        }
                     }
                 }
 
                 &.social-link {
                     & > li {
                         padding-right: 40px;
+                        &:last-child {
+                            padding-right: 0;
+                        }
                     }
                 }
             }
@@ -1551,6 +1568,47 @@ footer {
 
             .privacy {
                 margin-left: 28px;
+            }
+        }
+
+        @media (max-width: 1130px) {
+            & > div:first-child {
+                justify-content: center;
+                ul {
+                    &.menu-footer {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        @media (max-width: 700px) {
+            & > div:last-child {
+                flex-direction: column;
+                & > * {
+                    margin-bottom: 28px;
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+
+        @media (max-width: 360px) {
+            & > div:first-child ul.social-link > li {
+                padding-right: 24px;
+            }
+
+            & > div:last-child > *:last-child {
+                display: flex;
+                flex-direction: column;
+                &>a{
+                    margin-left: 0;
+                    text-align: center;
+                    &:last-of-type{
+                        margin-top: 28px;
+                    }
+                }
             }
         }
     }
