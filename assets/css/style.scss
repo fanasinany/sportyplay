@@ -954,7 +954,7 @@ header {
 }
 
 .elite_wrapper {
-    padding-top: 200px;
+    padding-top: 100px;
     position: relative;
     .purple-eclipse {
         top: -60%;
@@ -968,8 +968,8 @@ header {
 
     .banner-elite {
         border-radius: 32px 128px 32px 32px;
-        max-height: 530px;
-        height: 530px;
+        max-height: 400px;
+        height: 400px;
         background-image: url("../images/space-bg.png");
         background-repeat: no-repeat;
         background-size: cover;
@@ -1011,9 +1011,45 @@ header {
                 img {
                     position: relative;
                     left: -30%;
-                    top: -98px;
+                    bottom: 63px;
+                    height: 530px;
                 }
             }
+        }
+    }
+
+    @media (max-width: 1100px) {
+        padding: 80px 0 40px 0;
+        .banner-elite {
+            height: 450px;
+            max-height: 450px;
+            background-size: auto;
+            background-position: top;
+            .banner_content {
+                h3 {
+                    font-size: 2rem;
+                    margin-left: 0;
+                }
+                .elite-run {
+                    display: none;
+                }
+                &>div:last-of-type{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                    width: 100%;
+                    padding: 16px;
+                }
+            }
+        }
+    }
+
+    @media(max-width: 450px){
+        .banner-elite {
+            height: 550px;
+            max-height: 550px;
         }
     }
 }
