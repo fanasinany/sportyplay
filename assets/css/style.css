@@ -777,6 +777,81 @@ header nav .menu-burger {
   padding: 32px 40px 32px 40px;
   background-color: rgba(151, 71, 255, 0.1019607843);
 }
+@media (max-width: 800px) {
+  .how_it_work_wrapper {
+    padding: 60px 0;
+  }
+  .how_it_work_wrapper .stepper_wrapper .card_tree {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+  }
+}
+@media (max-width: 550px) {
+  .how_it_work_wrapper h2 {
+    text-align: start;
+  }
+  .how_it_work_wrapper .stepper_wrapper {
+    justify-content: flex-start;
+    position: relative;
+  }
+  .how_it_work_wrapper .stepper_wrapper .left-content {
+    left: 69px;
+    width: calc(100% - 80px);
+    min-width: calc(100% - 80px);
+    position: absolute;
+  }
+  .how_it_work_wrapper .stepper_wrapper .left-content > span {
+    right: unset;
+  }
+  .how_it_work_wrapper .stepper_wrapper .left-content > span:nth-child(2) {
+    top: 14px;
+  }
+  .how_it_work_wrapper .stepper_wrapper .left-content > span:nth-child(4) {
+    top: 65px;
+  }
+  .how_it_work_wrapper .stepper_wrapper .left-content > span:nth-child(6) {
+    top: 115px;
+  }
+  .how_it_work_wrapper .stepper_wrapper .left-content > span:not(.card_tree) {
+    width: 0px;
+  }
+  .how_it_work_wrapper .stepper_wrapper .left-content .card_tree {
+    border-radius: 8.63px 34.51px 8.63px 8.63px;
+  }
+  .how_it_work_wrapper .stepper_wrapper .tree {
+    order: -1;
+  }
+  .how_it_work_wrapper .stepper_wrapper .right-content {
+    width: calc(100% - 80px);
+    min-width: calc(100% - 80px);
+    position: absolute;
+    left: 69px;
+  }
+  .how_it_work_wrapper .stepper_wrapper .right-content > span {
+    left: unset;
+  }
+  .how_it_work_wrapper .stepper_wrapper .right-content > span:nth-child(3) {
+    top: 40px;
+  }
+  .how_it_work_wrapper .stepper_wrapper .right-content > span:nth-child(5) {
+    top: 90px;
+  }
+  .how_it_work_wrapper .stepper_wrapper .right-content > span:nth-child(7) {
+    top: 142px;
+  }
+  .how_it_work_wrapper .stepper_wrapper .right-content > span:not(.card_tree) {
+    width: 0px;
+  }
+  .how_it_work_wrapper .stepper_wrapper .right-content .card_tree {
+    border-radius: 8.63px 34.51px 8.63px 8.63px;
+  }
+}
+@media (max-width: 400px) {
+  .how_it_work_wrapper .stepper_wrapper .card_tree {
+    padding: 12px;
+  }
+}
 
 .elite_wrapper {
   padding-top: 200px;

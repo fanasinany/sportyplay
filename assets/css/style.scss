@@ -867,6 +867,90 @@ header {
             background-color: #9747ff1a;
         }
     }
+
+    @media (max-width: 800px) {
+        padding: 60px 0;
+        .stepper_wrapper {
+            .card_tree {
+                padding: 20px;
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+
+    @media (max-width: 550px) {
+        h2{
+            text-align: start;
+        }
+        .stepper_wrapper {
+            justify-content: flex-start;
+            position: relative;
+            .left-content {
+                left: 69px;
+                width: calc(100% - 80px);
+                min-width: calc(100% - 80px);
+                position: absolute;
+                & > span {
+                    right: unset;
+                    &:nth-child(2) {
+                        top: 14px;
+                    }
+                    &:nth-child(4) {
+                        top: 65px;
+                    }
+                    &:nth-child(6) {
+                        top: 115px;
+                    }
+                    &:not(.card_tree) {
+                        width: 0px;
+                    }
+                }
+
+                .card_tree {
+                    border-radius: 8.63px 34.51px 8.63px 8.63px;
+                }
+            }
+
+            .tree {
+                order: -1;
+            }
+
+            .right-content {
+                width: calc(100% - 80px);
+                min-width: calc(100% - 80px);
+                position: absolute;
+                left: 69px;
+                & > span {
+                    left: unset;
+                    &:nth-child(3) {
+                        top: 40px;
+                    }
+                    &:nth-child(5) {
+                        top: 90px;
+                    }
+                    &:nth-child(7) {
+                        top: 142px;
+                    }
+                    &:not(.card_tree) {
+                        width: 0px;
+                    }
+                }
+
+                .card_tree {
+                    border-radius: 8.63px 34.51px 8.63px 8.63px;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 400px) {
+        .stepper_wrapper {
+            .card_tree {
+                padding: 12px;
+            }
+        }
+    }
 }
 
 .elite_wrapper {
