@@ -53,6 +53,39 @@ a {
     text-decoration: none;
 }
 
+h1,
+h2 {
+    font-family: "Orbitron";
+    font-size: 3.125rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin: 0;
+    & > span {
+        color: $orange;
+    }
+
+    @media (max-width: 1024px) {
+        font-size: 2.125rem;
+    }
+}
+
+h3 {
+    margin: 0;
+}
+
+.container {
+    max-width: 1450px;
+    margin: 0 auto;
+    @media (max-width: 1470px) {
+        max-width: unset;
+        padding: 0 32px;
+    }
+
+    @media (max-width: 1250px) {
+        padding: 0 16px;
+    }
+}
+
 header {
     width: 100%;
     position: fixed;
@@ -104,7 +137,7 @@ header {
                     padding-right: 0;
                 }
 
-                &.show-mobile{
+                &.show-mobile {
                     display: none;
                 }
             }
@@ -204,57 +237,27 @@ header {
         }
     }
 
-    @media (max-width:600px) {
-        nav{
-            img{
+    @media (max-width: 600px) {
+        nav {
+            img {
                 height: 60px;
             }
 
-            ul{
-                &>li{
-                    &.show-mobile{
+            ul {
+                & > li {
+                    &.show-mobile {
                         display: flex;
-                        .join-us{
+                        .join-us {
                             display: flex;
                         }
                     }
                 }
             }
 
-            .join-us{
+            .join-us {
                 display: none;
             }
-
         }
-    }
-}
-
-h1,
-h2 {
-    font-family: "Orbitron";
-    font-size: 3.125rem;
-    font-weight: 900;
-    text-transform: uppercase;
-    margin: 0;
-    & > span {
-        color: $orange;
-    }
-}
-
-h3 {
-    margin: 0;
-}
-
-.container {
-    max-width: 1450px;
-    margin: 0 auto;
-    @media (max-width: 1470px) {
-        max-width: unset;
-        padding: 0 32px;
-    }
-
-    @media (max-width: 1250px) {
-        padding: 0 16px;
     }
 }
 
@@ -272,6 +275,9 @@ h3 {
 .yellow-eclipse {
     position: absolute;
     z-index: 3;
+    @media (max-width: 700px) {
+        width: 500px;
+    }
 }
 
 .howe_wrapper {
@@ -315,6 +321,7 @@ h3 {
         height: 100%;
         width: 100%;
     }
+
     h1 {
         max-width: 1250px;
         margin: 0;
@@ -397,6 +404,20 @@ h3 {
             }
         }
     }
+
+    @media (max-width: 1024px) {
+        .girl-top,
+        .boy-top {
+            width: 36%;
+        }
+    }
+
+    @media (max-width: 1024px) {
+        .girl-top,
+        .boy-top {
+            display: none;
+        }
+    }
 }
 
 .best_wrapper {
@@ -427,7 +448,6 @@ h3 {
                 border-radius: 16px 64px 16px 16px;
                 width: 30%;
                 padding: 16px;
-                height: 138px;
                 display: flex;
                 justify-content: center;
                 flex-direction: column;
@@ -456,6 +476,56 @@ h3 {
         .yellow-eclipse {
             bottom: -117%;
             left: -16%;
+        }
+    }
+
+    @media (max-width: 1250px) {
+        padding: 180px 0 240px 0;
+        .card_and_image {
+            width: 65%;
+            .card_wrapper {
+                gap: 16px;
+                & > div {
+                    width: calc(50% - 16px);
+                }
+            }
+        }
+    }
+
+    @media (max-width: 1024px) {
+        padding: 180px 0 180px 0;
+        .card_and_image {
+            width: 70%;
+        }
+    }
+
+    @media (max-width: 930px) {
+        background-image: none;
+        padding: 100px 0 100px 0;
+        .card_and_image {
+            margin-top: 50px;
+            width: 100%;
+        }
+    }
+
+    @media (max-width: 700px) {
+        .card_and_image {
+            .card_wrapper {
+                & > div {
+                    width: 100%;
+                }
+            }
+        }
+
+        .container {
+            .purple-eclipse {
+                top: -30%;
+                right: 0;
+            }
+            .yellow-eclipse {
+                bottom: -60%;
+                left: 0;
+            }
         }
     }
 }
