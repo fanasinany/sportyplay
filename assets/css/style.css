@@ -377,8 +377,8 @@ header nav .menu-burger {
   height: 96px;
 }
 .howe_wrapper .marquee-container .swiper-slide {
-  width: -moz-max-content !important;
-  width: max-content !important;
+  width: -moz-max-content;
+  width: max-content;
 }
 .howe_wrapper .marquee-container .content-swip {
   display: flex;

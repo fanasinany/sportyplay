@@ -407,7 +407,6 @@ header {
         width: 100%;
         transform: rotate(-2.9deg);
         position: relative;
-        // left: -4px;
         z-index: 3;
         &::after {
             content: "";
@@ -423,7 +422,7 @@ header {
         }
 
         .swiper-slide {
-            width: max-content !important;
+            width: max-content;
         }
 
         .content-swip {
