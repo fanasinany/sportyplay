@@ -256,7 +256,7 @@ header nav .menu-burger {
 }
 
 .howe_wrapper {
-  background-image: url("../images/home-bg.png");
+  background-image: url("../images/home-bg.webp");
   background-size: cover;
 }
 .howe_wrapper .girl-top {
@@ -391,7 +391,7 @@ header nav .menu-burger {
 .best_wrapper {
   background-color: rgb(21, 21, 21);
   padding: 180px 0 250px 0;
-  background-image: url("../images/girl-objectif-1.png");
+  background-image: url("../images/girl-objectif-1.webp");
   background-repeat: no-repeat;
   background-position-x: 95%;
   background-position-y: bottom;
@@ -492,7 +492,7 @@ header nav .menu-burger {
 }
 
 .video_wrapper {
-  background-image: url("../images/bg-video.png");
+  background-image: url("../images/bg-video.webp");
   height: 99vh;
   background-size: cover;
   display: flex;
@@ -525,7 +525,7 @@ header nav .menu-burger {
   background-position: 90% 65%;
 }
 .para_wrapper.boy_jump {
-  background-image: url("../images/boy-jump.png");
+  background-image: url("../images/boy-jump.webp");
 }
 .para_wrapper.boy_jump .purple-eclipse {
   top: -50%;
@@ -541,7 +541,7 @@ header nav .menu-burger {
   left: -20%;
 }
 .para_wrapper.girl_top_hand {
-  background-image: url("../images/girl-top-hand.png");
+  background-image: url("../images/girl-top-hand.webp");
 }
 .para_wrapper.girl_top_hand .purple-eclipse {
   top: -46%;
@@ -606,7 +606,7 @@ header nav .menu-burger {
 
 .adventure_wrapper {
   padding: 64px 0;
-  background-image: url("../images/city.png");
+  background-image: url("../images/city.webp");
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -616,7 +616,7 @@ header nav .menu-burger {
   width: 100%;
   height: 100%;
   position: absolute;
-  background-image: url("../images/boy-run.png");
+  background-image: url("../images/boy-run.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -887,7 +887,7 @@ header nav .menu-burger {
   border-radius: 32px 128px 32px 32px;
   max-height: 400px;
   height: 400px;
-  background-image: url("../images/space-bg.png");
+  background-image: url("../images/space-bg.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: 55%;
@@ -973,7 +973,7 @@ header nav .menu-burger {
 
 .pack_wrapper {
   padding: 200px 0 160px 0;
-  background-image: url("../images/globe.png");
+  background-image: url("../images/globe.webp");
   min-height: 100vh;
   background-size: cover;
   position: relative;
@@ -1131,7 +1131,7 @@ header nav .menu-burger {
 }
 
 .team_wrapper {
-  background-image: url("../images/world-lune.png");
+  background-image: url("../images/world-lune.webp");
   min-height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1153,7 +1153,7 @@ header nav .menu-burger {
   border: 1px solid rgba(167, 20, 214, 0.5);
   max-height: 800px;
   height: 800px;
-  background-image: url("../images/world-lune.png");
+  background-image: url("../images/world-lune.webp");
   background-size: 109%;
   background-repeat: no-repeat;
   display: flex;
@@ -1260,7 +1260,7 @@ header nav .menu-burger {
 .faq_wrapper {
   padding: 120px 0;
   min-height: 100vh;
-  background-image: url("../images/faq-bg.png");
+  background-image: url("../images/faq-bg.webp");
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
@@ -1346,7 +1346,7 @@ header nav .menu-burger {
 footer {
   position: relative;
   min-height: 100vh;
-  background-image: url("../images/bg-footer.png");
+  background-image: url("../images/home-bg.webp");
   background-size: cover;
   overflow: hidden;
 }
