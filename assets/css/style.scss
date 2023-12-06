@@ -84,6 +84,9 @@ h1 {
     & > span {
         color: $orange;
     }
+    @media (max-width: 1024px) {
+        font-size: 2.125rem;
+    }
 }
 
 h2 {
@@ -108,7 +111,7 @@ h2 {
     }
 
     @media (max-width: 1024px) {
-        font-size: 2.125rem;
+        font-size: 1.8rem;
     }
 }
 
