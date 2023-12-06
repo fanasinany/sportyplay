@@ -65,32 +65,38 @@ a {
   text-decoration: none;
 }
 
-h1,
-h2 {
+h1 {
   font-family: "Orbitron";
   font-size: 3.125rem;
   font-weight: 900;
   text-transform: uppercase;
   margin: 0;
 }
-h1 > span,
+h1 > span {
+  color: #ff914d;
+}
+
+h2 {
+  font-family: "Orbitron";
+  font-size: 2.4rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin: 0;
+}
 h2 > span {
   color: #ff914d;
 }
-h1 > span.linear-text,
 h2 > span.linear-text {
   -webkit-text-fill-color: transparent;
   background: -webkit-linear-gradient(left, #ff914d, #752cc6);
   -webkit-background-clip: text;
 }
-h1 > span.linear-text-with-dark,
 h2 > span.linear-text-with-dark {
   -webkit-text-fill-color: transparent;
   background: -webkit-linear-gradient(left, #ff914d, #b84022);
   -webkit-background-clip: text;
 }
 @media (max-width: 1024px) {
-  h1,
   h2 {
     font-size: 2.125rem;
   }
