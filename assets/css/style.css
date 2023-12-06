@@ -86,7 +86,7 @@ h2 > span.linear-text {
 h1 > span.linear-text-with-dark,
 h2 > span.linear-text-with-dark {
   -webkit-text-fill-color: transparent;
-  background: -webkit-linear-gradient(left, #ff914d, #B84022);
+  background: -webkit-linear-gradient(left, #ff914d, #b84022);
   -webkit-background-clip: text;
 }
 @media (max-width: 1024px) {
@@ -1031,42 +1031,56 @@ header nav .menu-burger {
 .pack_wrapper .card_pack_wrapper {
   margin-top: 186px;
   display: flex;
-  gap: 24px;
+  gap: 40px;
   justify-content: center;
   align-items: flex-end;
 }
 .pack_wrapper .card_pack_wrapper > div {
+  cursor: default;
   border-radius: 16px 64px 16px 16px;
+  max-width: 372px;
+  flex: 1;
+  position: relative;
+  transition: transform 0.3s;
+  z-index: 1;
+}
+.pack_wrapper .card_pack_wrapper > div:hover {
+  transform: scale(1.1);
+}
+.pack_wrapper .card_pack_wrapper > div > div {
+  background-color: rgba(14, 12, 21, 0.9);
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 118px 32px 56px 32px;
-  position: relative;
-  max-width: 372px;
-  flex: 1;
-  background-color: rgba(14, 12, 21, 0.9);
+  border-radius: 16px 64px 16px 16px;
 }
-.pack_wrapper .card_pack_wrapper > div .list_description {
+.pack_wrapper .card_pack_wrapper > div > div > img {
+  position: absolute;
+  top: -86px;
+}
+.pack_wrapper .card_pack_wrapper > div > div .list_description {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-.pack_wrapper .card_pack_wrapper > div .list_description > li {
+.pack_wrapper .card_pack_wrapper > div > div .list_description > li {
   text-align: center;
   color: rgba(255, 255, 255, 0.75);
   margin-bottom: 24px;
 }
-.pack_wrapper .card_pack_wrapper > div .list_description > li:last-child {
+.pack_wrapper .card_pack_wrapper > div > div .list_description > li:last-child {
   margin-bottom: 0;
 }
-.pack_wrapper .card_pack_wrapper > div .pack_name {
+.pack_wrapper .card_pack_wrapper > div > div .pack_name {
   font-size: 1.25rem;
   border: 2px solid;
   padding: 12px 16px;
   border-radius: 45px;
   text-align: center;
 }
-.pack_wrapper .card_pack_wrapper > div .pack_price {
+.pack_wrapper .card_pack_wrapper > div > div .pack_price {
   margin: 48px 0;
   font-size: 2.25rem;
   font-family: "Orbitron";
@@ -1075,11 +1089,11 @@ header nav .menu-burger {
   display: flex;
   flex-direction: column;
 }
-.pack_wrapper .card_pack_wrapper > div .pack_price > span {
+.pack_wrapper .card_pack_wrapper > div > div .pack_price > span {
   font-size: 1rem;
   font-weight: 400;
 }
-.pack_wrapper .card_pack_wrapper > div .btn-start {
+.pack_wrapper .card_pack_wrapper > div > div .btn-start {
   padding: 16px 32px 16px 32px;
   border-radius: 16px;
   border: 3px solid rgba(0, 0, 0, 0.3);
@@ -1089,12 +1103,18 @@ header nav .menu-burger {
   font-weight: 900;
   transition: background 0.6s;
 }
-.pack_wrapper .card_pack_wrapper > div .btn-start:hover {
+.pack_wrapper .card_pack_wrapper > div > div .btn-start:hover {
   background: #a714d6 !important;
 }
-.pack_wrapper .card_pack_wrapper > div > img {
+.pack_wrapper .card_pack_wrapper > div::before {
+  content: "";
   position: absolute;
-  top: -86px;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  z-index: -1;
+  top: -2px;
+  left: -2px;
+  border-radius: 16px 64px 16px 16px;
 }
 .pack_wrapper .card_pack_wrapper > div.pack_aventure .pack_name {
   border-color: rgb(224, 208, 182);
@@ -1104,14 +1124,7 @@ header nav .menu-burger {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(275.28deg, #f1e6c9 -44.76%, #2e2b24 161.3%);
 }
 .pack_wrapper .card_pack_wrapper > div.pack_aventure::before {
-  content: "";
-  position: absolute;
-  width: calc(100% + 4px);
-  height: calc(100% + 4px);
   background: linear-gradient(180deg, #e0d0b6 0%, rgba(255, 188, 80, 0) 100%);
-  top: -2px;
-  z-index: -1;
-  border-radius: 16px 64px 16px 16px;
 }
 .pack_wrapper .card_pack_wrapper > div.pack_evolution .pack_name {
   border-color: rgb(136, 227, 241);
@@ -1121,14 +1134,7 @@ header nav .menu-burger {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(275.28deg, #2944b5 -44.76%, #88e3f1 161.3%);
 }
 .pack_wrapper .card_pack_wrapper > div.pack_evolution::before {
-  content: "";
-  position: absolute;
-  width: calc(100% + 4px);
-  height: calc(100% + 4px);
   background: linear-gradient(180deg, #88e3f1 0%, rgba(255, 188, 80, 0) 100%);
-  top: -2px;
-  z-index: -1;
-  border-radius: 16px 64px 16px 16px;
 }
 .pack_wrapper .card_pack_wrapper > div.pack_legende .pack_name {
   border-color: rgb(229, 87, 52);
@@ -1138,14 +1144,7 @@ header nav .menu-burger {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(275.28deg, #cd320c -44.76%, #b84022 161.3%);
 }
 .pack_wrapper .card_pack_wrapper > div.pack_legende::before {
-  content: "";
-  position: absolute;
-  width: calc(100% + 4px);
-  height: calc(100% + 4px);
   background: linear-gradient(180deg, #b84022 0%, rgba(255, 188, 80, 0) 100%);
-  top: -2px;
-  z-index: -1;
-  border-radius: 16px 64px 16px 16px;
 }
 @media (max-width: 1100px) {
   .pack_wrapper {
