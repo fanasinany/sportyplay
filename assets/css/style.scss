@@ -324,6 +324,7 @@ header {
 .howe_wrapper {
     background-image: url("../images/home-bg.webp");
     background-size: cover;
+    background-attachment: fixed;
     .girl-top {
         position: absolute;
         bottom: -40px;
@@ -1735,15 +1736,26 @@ footer {
                     }
                 }
             }
-        }
-
-        @media (max-width: 700px) {
             & > div:last-child {
                 flex-direction: column;
                 & > * {
                     margin-bottom: 28px;
                     &:last-child {
                         margin-bottom: 0;
+                        display: flex;
+                        align-items: center;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                    }
+
+                    @media(max-width:530px){
+                        &:last-child {
+                            flex-direction: column;
+                            .privacy{
+                                margin-left: 0;
+                                margin-top: 24px;
+                            }
+                        }
                     }
                 }
             }

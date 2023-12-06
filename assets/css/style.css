@@ -292,6 +292,7 @@ header nav .menu-burger {
 .howe_wrapper {
   background-image: url("../images/home-bg.webp");
   background-size: cover;
+  background-attachment: fixed;
 }
 .howe_wrapper .girl-top {
   position: absolute;
@@ -1562,8 +1563,6 @@ footer .bottom-content > div:last-child .privacy {
   footer .bottom-content > div:first-child ul.menu-footer {
     display: none;
   }
-}
-@media (max-width: 700px) {
   footer .bottom-content > div:last-child {
     flex-direction: column;
   }
@@ -1572,6 +1571,19 @@ footer .bottom-content > div:last-child .privacy {
   }
   footer .bottom-content > div:last-child > *:last-child {
     margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media (max-width: 1130px) and (max-width: 530px) {
+  footer .bottom-content > div:last-child > *:last-child {
+    flex-direction: column;
+  }
+  footer .bottom-content > div:last-child > *:last-child .privacy {
+    margin-left: 0;
+    margin-top: 24px;
   }
 }
 @media (max-width: 360px) {
