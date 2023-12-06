@@ -1048,11 +1048,11 @@ header nav .menu-burger {
 }
 .pack_wrapper .card_pack_wrapper > div {
   cursor: default;
+  transition: transform 0.7s !important;
   border-radius: 16px 64px 16px 16px;
   max-width: 372px;
   flex: 1;
   position: relative;
-  transition: transform 0.3s;
   z-index: 1;
 }
 .pack_wrapper .card_pack_wrapper > div:hover {

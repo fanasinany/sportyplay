@@ -1156,6 +1156,7 @@ header {
         align-items: flex-end;
         & > div {
             cursor: default;
+            transition: transform 0.7s!important;
             &:hover {
                 transform: scale(1.1);
             }
@@ -1163,7 +1164,7 @@ header {
             max-width: 372px;
             flex: 1;
             position: relative;
-            transition: transform 0.3s;
+          
             z-index: 1;
             & > div {
                 background-color: rgba(14, 12, 21, 0.9);
