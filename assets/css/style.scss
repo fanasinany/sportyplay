@@ -595,28 +595,33 @@ header {
 }
 
 .video_wrapper {
-    background-image: url("../images/bg-video.webp");
-    height: 99vh;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-position: center;
-    img {
-        position: relative;
-        left: -12px;
-    }
+    // background-image: url("../images/bg-video.webp");
+    // height: 99vh;
+    // background-size: cover;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    // background-position: center;
+    // img {
+    //     position: relative;
+    //     left: -12px;
+    // }
 
-    @media (max-width: 900px) {
-        height: 500px;
-        img {
-            left: -6px;
-            height: 100px;
-        }
-    }
+    // @media (max-width: 900px) {
+    //     height: 500px;
+    //     img {
+    //         left: -6px;
+    //         height: 100px;
+    //     }
+    // }
 
-    @media (max-width: 650px) {
-        height: 400px;
+    // @media (max-width: 650px) {
+    //     height: 400px;
+    // }
+    video {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
     }
 }
 

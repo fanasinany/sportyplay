@@ -537,32 +537,11 @@ header nav .menu-burger {
   }
 }
 
-.video_wrapper {
-  background-image: url("../images/bg-video.webp");
-  height: 99vh;
-  background-size: cover;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-position: center;
-}
-.video_wrapper img {
-  position: relative;
-  left: -12px;
-}
-@media (max-width: 900px) {
-  .video_wrapper {
-    height: 500px;
-  }
-  .video_wrapper img {
-    left: -6px;
-    height: 100px;
-  }
-}
-@media (max-width: 650px) {
-  .video_wrapper {
-    height: 400px;
-  }
+.video_wrapper video {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .para_wrapper {
