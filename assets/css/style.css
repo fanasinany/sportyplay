@@ -1563,6 +1563,9 @@ footer .bottom-content > div:last-child a {
 footer .bottom-content > div:last-child .privacy {
   margin-left: 28px;
 }
+footer .bottom-content .logo-img img {
+  height: 50px;
+}
 @media (max-width: 1130px) {
   footer .bottom-content > div:first-child {
     justify-content: center;

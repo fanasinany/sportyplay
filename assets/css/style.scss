@@ -1739,6 +1739,10 @@ footer {
             }
         }
 
+        .logo-img img{
+            height: 50px;
+        }
+
         @media (max-width: 1130px) {
             & > div:first-child {
                 justify-content: center;
