@@ -456,6 +456,64 @@
                             </div>
                         </div>
                     </div>
+                    <div class="slide-pack-mobile">
+                        <div class="slide-pack">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="slide-item-pack pack_aventure">
+                                        <div>
+                                            <img src="./assets/images/pack-aventure.png" alt="Pack Aventure">
+                                            <span class="pack_name">Pack aventure</span>
+                                            <p class="pack_price">Gratuit</p>
+                                            <ul class="list_description">
+                                                <li>Accès illimité au mode multi-joueurs</li>
+                                                <li>Entraînements de base personnalisés</li>
+                                                <li>Suivi des progrès de remise en forme</li>
+                                                <li>Participation aux défis hebdomadaires</li>
+                                            </ul>
+                                            <a href="#form-contact" class="btn-start">Commencer !</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slide-item-pack pack_evolution">
+                                        <div>
+                                            <img src="./assets/images/pack-evolution.png" alt="Pack Evolution">
+                                            <span class="pack_name">Pack évolution</span>
+                                            <p class="pack_price">6,99 €
+                                                <span>par mois</span>
+                                            </p>
+                                            <ul class="list_description">
+                                                <li>Tous les avantages de l'Offre Aventure</li>
+                                                <li>Entraînements avancés personnalisés</li>
+                                                <li>Accès exclusif au mode capteur de mouvement amélioré</li>
+                                                <li>Soutien personnalisé d'un coach sportif dédié</li>
+                                            </ul>
+                                            <a href="#form-contact" class="btn-start">Commencer !</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slide-item-pack pack_legende">
+                                        <div>
+                                            <img src="./assets/images/pack-legende.png" alt="Pack Legende">
+                                            <span class="pack_name">Pack légende</span>
+                                            <p class="pack_price">14,99 €
+                                                <span>par mois</span>
+                                            </p>
+                                            <ul class="list_description">
+                                                <li>Tous les avantages de l'Offre évolution</li>
+                                                <li>Sessions de coaching individuel en direct</li>
+                                                <li>Accès prioritaire aux événements communautaires exclusifs</li>
+                                                <li>Contenu bonus et récompenses exclusives</li>
+                                            </ul>
+                                            <a href="#form-contact" class="btn-start">Commencer !</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -835,6 +893,16 @@
             },
             speed: 8000,
         });
+
+        const swiperPack = new Swiper('.slide-pack', {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            autoplay: {
+                // delay: 1,
+                disableOnInteraction: true,
+            },
+            loop: true
+        })
 
         function toggleClasse(element) {
             var parentElement = element.parentNode.parentNode;
