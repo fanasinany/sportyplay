@@ -449,6 +449,9 @@ header nav .menu-burger {
   }
 }
 @media (max-width: 650px) {
+  .howe_wrapper {
+    overflow: hidden;
+  }
   .howe_wrapper .girl-top,
   .howe_wrapper .boy-top {
     width: 50%;

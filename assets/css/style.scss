@@ -502,6 +502,7 @@ header {
     }
 
     @media (max-width: 650px) {
+        overflow: hidden;
         .girl-top,
         .boy-top {
             width: 50%;
