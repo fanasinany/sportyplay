@@ -1438,7 +1438,7 @@ header nav .menu-burger {
 }
 
 .faq_wrapper {
-  padding: 120px 0;
+  padding: 80px 0;
   background-image: url("../images/faq-bg.webp");
   background-size: cover;
   background-repeat: no-repeat;
@@ -1475,6 +1475,8 @@ header nav .menu-burger {
   padding: 16px 32px;
   border-radius: 16px 32px 16px 16px;
   width: calc(50% - 44px);
+  transition: max-height 0.3s;
+  max-height: 200px;
 }
 .faq_wrapper .card_faq_wrapper .card_faq .question {
   display: flex;
@@ -1506,11 +1508,16 @@ header nav .menu-burger {
   height: fit-content;
 }
 .faq_wrapper .card_faq_wrapper .card_faq.second-faq {
-  display: none;
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  padding: 0;
+  border: 0;
 }
 .faq_wrapper .card_faq_wrapper .faq-view-more {
   width: 100%;
   text-align: center;
+  margin-top: 16px;
 }
 .faq_wrapper .card_faq_wrapper .faq-view-more button {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(275.28deg, #ff914d -44.76%, #b84022 161.3%);
@@ -1523,6 +1530,7 @@ header nav .menu-burger {
   border: 3px solid rgba(0, 0, 0, 0.2);
   transition: background 0.6s;
   color: white;
+  font-family: Now;
 }
 .faq_wrapper .card_faq_wrapper .faq-view-more.less-more {
   order: 2;
@@ -1533,11 +1541,12 @@ header nav .menu-burger {
   }
   .faq_wrapper .card_faq_wrapper {
     flex-direction: column;
-    gap: 24px 0;
+    gap: 0;
   }
   .faq_wrapper .card_faq_wrapper .card_faq {
     width: 100%;
     padding: 16px;
+    margin-top: 8px;
   }
   .faq_wrapper .card_faq_wrapper .card_faq .question span {
     font-size: 1rem;
