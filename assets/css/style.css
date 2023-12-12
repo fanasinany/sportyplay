@@ -38,7 +38,7 @@ body {
 /* Firefox */
 * {
   scrollbar-width: auto;
-  scrollbar-color: #752cc6 #ffffff;
+  scrollbar-color: #752cc6 #111111;
 }
 
 /* Chrome, Edge, and Safari */
@@ -47,13 +47,13 @@ body {
 }
 
 *::-webkit-scrollbar-track {
-  background: #ffffff;
+  background: #111111;
 }
 
 *::-webkit-scrollbar-thumb {
   background-color: #752cc6;
   border-radius: 10px;
-  border: 3px solid #ffffff;
+  border: 3px solid #111111;
 }
 
 * {
@@ -1430,7 +1430,7 @@ header nav .menu-burger {
     top: -40px;
   }
   .team_wrapper .team_content .image-team img {
-    height: 300px;
+    height: 250px;
     max-width: 100%;
     -o-object-fit: cover;
        object-fit: cover;
@@ -1475,8 +1475,8 @@ header nav .menu-burger {
   padding: 16px 32px;
   border-radius: 16px 32px 16px 16px;
   width: calc(50% - 44px);
-  transition: max-height 0.3s;
-  max-height: 200px;
+  transition: max-height 0.5s;
+  max-height: 600px;
 }
 .faq_wrapper .card_faq_wrapper .card_faq .question {
   display: flex;
