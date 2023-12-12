@@ -407,6 +407,7 @@ header {
         justify-content: center;
         position: relative;
         transition: background 0.6s;
+        z-index: 2;
         &::before {
             content: "";
             position: absolute;
@@ -467,10 +468,6 @@ header {
     }
 
     @media (max-width: 1024px) {
-        .girl-top,
-        .boy-top {
-            display: none;
-        }
         & > div:first-child {
             padding-top: 120px;
         }
@@ -493,6 +490,29 @@ header {
         }
         p {
             margin: 24px 0;
+        }
+    }
+
+    @media (max-width: 850px) {
+        .girl-top,
+        .boy-top {
+            width: 40%;
+            z-index: 0;
+        }
+    }
+
+    @media (max-width: 650px) {
+        .girl-top,
+        .boy-top {
+            width: 50%;
+        }
+
+        .girl-top {
+            left: -10%;
+        }
+
+        .boy-top {
+            right: -10%;
         }
     }
 }
@@ -1655,16 +1675,17 @@ header {
                 }
             }
 
-            &.second-faq{
+            &.second-faq {
                 display: none;
             }
         }
 
-        .faq-view-more{
+        .faq-view-more {
             width: 100%;
             text-align: center;
-            button{
-                background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(275.28deg, #ff914d -44.76%, #b84022 161.3%);
+            button {
+                background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+                    linear-gradient(275.28deg, #ff914d -44.76%, #b84022 161.3%);
                 border-radius: 1rem;
                 padding: 16px 32px;
                 text-transform: uppercase;
@@ -1676,7 +1697,7 @@ header {
                 color: white;
             }
 
-            &.less-more{
+            &.less-more {
                 order: 2;
             }
         }

@@ -364,6 +364,7 @@ header nav .menu-burger {
   justify-content: center;
   position: relative;
   transition: background 0.6s;
+  z-index: 2;
 }
 .howe_wrapper .btn-play::before {
   content: "";
@@ -419,10 +420,6 @@ header nav .menu-burger {
   white-space: nowrap;
 }
 @media (max-width: 1024px) {
-  .howe_wrapper .girl-top,
-  .howe_wrapper .boy-top {
-    display: none;
-  }
   .howe_wrapper > div:first-child {
     padding-top: 120px;
   }
@@ -442,6 +439,25 @@ header nav .menu-burger {
   }
   .howe_wrapper p {
     margin: 24px 0;
+  }
+}
+@media (max-width: 850px) {
+  .howe_wrapper .girl-top,
+  .howe_wrapper .boy-top {
+    width: 40%;
+    z-index: 0;
+  }
+}
+@media (max-width: 650px) {
+  .howe_wrapper .girl-top,
+  .howe_wrapper .boy-top {
+    width: 50%;
+  }
+  .howe_wrapper .girl-top {
+    left: -10%;
+  }
+  .howe_wrapper .boy-top {
+    right: -10%;
   }
 }
 
