@@ -591,7 +591,10 @@
                             nulla. Volutpat platea quis diam porttitor.
                         </p>
                     </div>
-                    <div class="card_faq" data-aos="fade-down" data-aos-duration="1500">
+                    <div class="faq-view-more" id="content-faq-more">
+                        <button id="btn-view-more-faq" onclick="showMoreFaq()">Voir plus</button>
+                    </div>
+                    <div class="card_faq additional second-faq">
                         <div class="question">
                             <span>Je n'ai pas beaucoup de temps pour m'entraîner. Comment Sportyplay peut-il s'adapter à
                                 mon emploi du temps chargé ?</span>
@@ -610,7 +613,7 @@
                             nulla. Volutpat platea quis diam porttitor.
                         </p>
                     </div>
-                    <div class="card_faq" data-aos="fade-down" data-aos-duration="1500">
+                    <div class="card_faq additional second-faq">
                         <div class="question">
                             <span>Je veux m'assurer que mon expérience de jeu est sécurisée et protégée. Comment
                                 Sportyplay garantit-il la sécurité de mes données et de mon expérience de jeu ?</span>
@@ -629,7 +632,7 @@
                             nulla. Volutpat platea quis diam porttitor.
                         </p>
                     </div>
-                    <div class="card_faq" data-aos="fade-down" data-aos-duration="1500">
+                    <div class="card_faq additional second-faq">
                         <div class="question">
                             <span>J'ai du mal à rester motivé. Comment Sportyplay peut-il m'aider à rester engagé dans
                                 mon programme de fitness ?</span>
@@ -648,7 +651,7 @@
                             nulla. Volutpat platea quis diam porttitor.
                         </p>
                     </div>
-                    <div class="card_faq" data-aos="fade-down" data-aos-duration="1500">
+                    <div class="card_faq additional second-faq">
                         <div class="question">
                             <span>J'ai du mal à rester engagé dans des programmes de fitness à long terme. Comment
                                 Sportyplay peut-il m'aider à maintenir ma motivation sur la durée ?</span>
@@ -667,7 +670,7 @@
                             nulla. Volutpat platea quis diam porttitor.
                         </p>
                     </div>
-                    <div class="card_faq" data-aos="fade-down" data-aos-duration="1500">
+                    <div class="card_faq additional second-faq">
                         <div class="question">
                             <span>Je crains de ne pas voir de progrès tangibles. Comment Sportyplay peut-il m'aider à
                                 suivre mes améliorations de fitness ?</span>
@@ -686,7 +689,7 @@
                             nulla. Volutpat platea quis diam porttitor.
                         </p>
                     </div>
-                    <div class="card_faq" data-aos="fade-down" data-aos-duration="1500">
+                    <div class="card_faq additional second-faq">
                         <div class="question">
                             <span>Je crains de ne pas être à la hauteur des défis proposés. Comment Sportyplay peut-il
                                 m'aider à me sentir plus confiant dans mes capacités ?</span>
@@ -705,7 +708,7 @@
                             nulla. Volutpat platea quis diam porttitor.
                         </p>
                     </div>
-                    <div class="card_faq" data-aos="fade-down" data-aos-duration="1500">
+                    <div class="card_faq additional second-faq">
                         <div class="question">
                             <span>Je ne suis pas très doué en sport. Comment Sportyplay peut-il m'aider à m'améliorer
                                 sans me sentir jugé ?</span>
@@ -724,7 +727,7 @@
                             nulla. Volutpat platea quis diam porttitor.
                         </p>
                     </div>
-                    <div class="card_faq" data-aos="fade-down" data-aos-duration="1500">
+                    <div class="card_faq additional second-faq">
                         <div class="question">
                             <span>Je cherche une communauté inclusive où je peux me sentir accepté et soutenu. Comment
                                 Sportyplay peut-il répondre à ce besoin ?</span>
@@ -903,6 +906,24 @@
             },
             loop: true
         })
+
+        function showMoreFaq() {
+            var elements = document.querySelectorAll('.card_faq.additional');
+            var btnContentView = document.getElementById("content-faq-more");
+            var btnView = document.getElementById("btn-view-more-faq")
+
+            elements.forEach(function (element) {
+                element.classList.toggle('second-faq');
+            });
+
+            btnContentView.classList.toggle('less-more')
+            if (btnContentView.classList.contains('less-more')) {
+                btnView.innerText = "Voir moins";
+            } else {
+                btnView.innerText = "Voir plus";
+            }
+
+        }
 
         function toggleClasse(element) {
             var parentElement = element.parentNode.parentNode;
