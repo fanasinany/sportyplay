@@ -103,7 +103,7 @@ h2 > span.linear-text-with-dark {
 }
 @media (max-width: 1024px) {
   h2 {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
   }
 }
 
@@ -446,6 +446,7 @@ header nav .menu-burger {
   .howe_wrapper .boy-top {
     width: 40%;
     z-index: 0;
+    display: none;
   }
 }
 @media (max-width: 650px) {
@@ -658,8 +659,10 @@ header nav .menu-burger {
     padding-bottom: 80px;
   }
   .para_wrapper > div h2 {
-    text-align: center;
     max-width: unset;
+  }
+  .para_wrapper > div p {
+    word-break: break-all;
   }
 }
 

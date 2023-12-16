@@ -111,7 +111,7 @@ h2 {
     }
 
     @media (max-width: 1024px) {
-        font-size: 1.8rem;
+        font-size: 1.7rem;
     }
 }
 
@@ -498,6 +498,7 @@ header {
         .boy-top {
             width: 40%;
             z-index: 0;
+            display: none;
         }
     }
 
@@ -723,8 +724,11 @@ header {
             padding-top: 80px;
             padding-bottom: 80px;
             h2 {
-                text-align: center;
                 max-width: unset;
+            }
+
+            p{
+                word-break: break-all;
             }
         }
     }
