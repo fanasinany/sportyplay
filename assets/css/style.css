@@ -21,6 +21,12 @@
 }
 html {
   scroll-behavior: smooth;
+  font-size: 16px;
+}
+@media (max-width: 600px) {
+  html {
+    font-size: 14px;
+  }
 }
 
 body {
@@ -28,7 +34,6 @@ body {
   margin: 0;
   padding: 0;
   color: #ffffff;
-  font-size: 16px;
   background-color: #151515;
   overflow-x: hidden;
   overflow-y: auto;
@@ -80,9 +85,9 @@ h1 > span {
     font-size: 2.125rem;
   }
 }
-@media (max-width: 405px) {
+@media (max-width: 500px) {
   h1 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
 }
 
@@ -113,7 +118,7 @@ h2 > span.linear-text-with-dark {
 }
 @media (max-width: 405px) {
   h2 {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
   }
 }
 
@@ -361,6 +366,11 @@ header nav .menu-burger {
   margin: 24px 0 40px 0;
   z-index: 2;
 }
+@media (max-width: 600px) {
+  .howe_wrapper p {
+    font-size: 1.2rem;
+  }
+}
 .howe_wrapper .btn-play {
   text-transform: uppercase;
   font-weight: 800;
@@ -391,6 +401,11 @@ header nav .menu-burger {
 }
 .howe_wrapper .btn-play:hover::before {
   background: #a714d6;
+}
+@media (max-width: 600px) {
+  .howe_wrapper .btn-play {
+    font-size: 1.2rem;
+  }
 }
 .howe_wrapper .marquee-container {
   height: 96px;
@@ -521,6 +536,14 @@ header nav .menu-burger {
   margin: 10px 0 0 0;
   color: rgba(255, 255, 255, 0.75);
 }
+@media (max-width: 600px) {
+  .best_wrapper .card_and_image .card_wrapper > div {
+    border-radius: 8px 32px 8px 8px;
+  }
+  .best_wrapper .card_and_image .card_wrapper > div > h3 {
+    font-size: 1.1rem;
+  }
+}
 .best_wrapper .container {
   position: relative;
 }
@@ -649,6 +672,11 @@ header nav .menu-burger {
   left: 0;
   top: 0;
 }
+@media (max-width: 600px) {
+  .para_wrapper > div p {
+    font-size: 1.1rem;
+  }
+}
 @media (max-width: 1400px) {
   .para_wrapper {
     background-position: right;
@@ -773,6 +801,17 @@ header nav .menu-burger {
   }
   .adventure_wrapper .card_adventure_wrapper .card_adventure {
     padding: 20px;
+  }
+}
+@media (max-width: 600px) {
+  .adventure_wrapper .card_adventure_wrapper .card_adventure {
+    border-radius: 8px 32px 8px 8px;
+  }
+  .adventure_wrapper .card_adventure_wrapper .card_adventure > h3 {
+    font-size: 1.1rem;
+  }
+  .adventure_wrapper .card_adventure_wrapper .card_adventure > p {
+    margin: 10px 0 0 0;
   }
 }
 
@@ -985,6 +1024,11 @@ header nav .menu-burger {
 .elite_wrapper .banner-elite .banner_content p {
   margin: 22px 0;
 }
+@media (max-width: 600px) {
+  .elite_wrapper .banner-elite .banner_content p {
+    line-height: 1.5rem;
+  }
+}
 .elite_wrapper .banner-elite .banner_content .btn-start {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(275.28deg, #ff914d -44.76%, #b84022 161.3%);
   border: 3px solid rgba(0, 0, 0, 0.2);
@@ -1037,6 +1081,14 @@ header nav .menu-burger {
     text-align: center;
     width: 100%;
     padding: 16px;
+  }
+}
+@media (max-width: 600px) {
+  .elite_wrapper .banner-elite {
+    border-radius: 16px 64px 16px 16px;
+  }
+  .elite_wrapper .banner-elite .banner_content h3 {
+    font-size: 1.5rem;
   }
 }
 @media (max-width: 450px) {
@@ -1375,6 +1427,11 @@ header nav .menu-burger {
   line-height: 21.96px;
   margin: 48px 0;
 }
+@media (max-width: 600px) {
+  .team_wrapper .team_content .text-team p {
+    font-size: 1rem;
+  }
+}
 .team_wrapper .team_content .text-team .btn-contact-us {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(275.28deg, #ff914d -44.76%, #b84022 161.3%);
   border-radius: 1rem;
@@ -1433,6 +1490,14 @@ header nav .menu-burger {
 @media (max-width: 870px) {
   .team_wrapper .team_content {
     margin-top: 60px;
+  }
+}
+@media (max-width: 600px) {
+  .team_wrapper .team_content {
+    border-radius: 16px 64px 16px 16px;
+  }
+  .team_wrapper .team_content::after {
+    border-radius: 16px 64px 16px 16px;
   }
 }
 @media (max-width: 490px) {
@@ -1646,6 +1711,11 @@ footer form > .description {
   text-align: center;
   margin: 32px 0;
 }
+@media (max-width: 600px) {
+  footer form > .description {
+    font-size: 1.1rem;
+  }
+}
 footer form .input {
   margin-bottom: 24px;
 }
@@ -1653,6 +1723,11 @@ footer form .input label {
   font-size: 1.25rem;
   font-weight: 500;
   display: block;
+}
+@media (max-width: 600px) {
+  footer form .input label {
+    font-size: 1.1rem;
+  }
 }
 footer form .input input {
   margin-top: 8px;
@@ -1730,6 +1805,11 @@ footer .bottom-content > div:first-child ul.social-link > li {
 footer .bottom-content > div:first-child ul.social-link > li:last-child {
   padding-right: 0;
 }
+@media (max-width: 600px) {
+  footer .bottom-content > div:first-child ul.social-link > li a svg {
+    height: 25px;
+  }
+}
 footer .bottom-content .line {
   border-top: 1px solid rgb(255, 255, 255);
   width: 100%;
@@ -1743,6 +1823,12 @@ footer .bottom-content > div:last-child {
 footer .bottom-content > div:last-child span,
 footer .bottom-content > div:last-child a {
   font-size: 1.16rem;
+}
+@media (max-width: 600px) {
+  footer .bottom-content > div:last-child span,
+  footer .bottom-content > div:last-child a {
+    font-size: 1rem;
+  }
 }
 footer .bottom-content > div:last-child .privacy {
   margin-left: 28px;

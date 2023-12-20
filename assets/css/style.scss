@@ -31,6 +31,10 @@ $orange: #ff914d;
 
 html {
     scroll-behavior: smooth;
+    font-size: 16px;
+    @media (max-width: 600px) {
+        font-size: 14px;
+    }
 }
 
 body {
@@ -38,7 +42,6 @@ body {
     margin: 0;
     padding: 0;
     color: #ffffff;
-    font-size: 16px;
     background-color: #151515;
     overflow-x: hidden;
     overflow-y: auto;
@@ -48,7 +51,7 @@ body {
 /* Firefox */
 * {
     scrollbar-width: auto;
-    scrollbar-color: $purple #111111;;
+    scrollbar-color: $purple #111111;
 }
 
 /* Chrome, Edge, and Safari */
@@ -63,7 +66,7 @@ body {
 *::-webkit-scrollbar-thumb {
     background-color: $purple;
     border-radius: 10px;
-    border: 3px solid #111111;;
+    border: 3px solid #111111;
 }
 
 * {
@@ -88,8 +91,8 @@ h1 {
         font-size: 2.125rem;
     }
 
-    @media (max-width: 405px) {
-        font-size: 1.8rem;
+    @media (max-width: 500px) {
+        font-size: 1.6rem;
     }
 }
 
@@ -119,7 +122,7 @@ h2 {
     }
 
     @media (max-width: 405px) {
-        font-size: 1.3rem;
+        font-size: 1.4rem;
     }
 }
 
@@ -398,6 +401,9 @@ header {
         line-height: 32px;
         margin: 24px 0 40px 0;
         z-index: 2;
+        @media (max-width: 600px) {
+            font-size: 1.2rem;
+        }
     }
 
     .btn-play {
@@ -432,6 +438,9 @@ header {
             &::before {
                 background: $purple-secondary;
             }
+        }
+        @media (max-width: 600px) {
+            font-size: 1.2rem;
         }
     }
 
@@ -570,6 +579,12 @@ header {
                     margin: 10px 0 0 0;
                     color: rgba(255, 255, 255, 0.75);
                 }
+                @media (max-width: 600px) {
+                    border-radius: 8px 32px 8px 8px;
+                    & > h3 {
+                        font-size: 1.1rem;
+                    }
+                }
             }
         }
     }
@@ -616,7 +631,7 @@ header {
     }
 
     @media (max-width: 700px) {
-        h2{
+        h2 {
             text-align: start;
         }
         .card_and_image {
@@ -710,6 +725,9 @@ header {
                 left: 0;
                 top: 0;
             }
+            @media (max-width: 600px) {
+                font-size: 1.1rem;
+            }
         }
     }
 
@@ -738,7 +756,7 @@ header {
                 max-width: unset;
             }
 
-            p{
+            p {
                 word-break: break-all;
             }
         }
@@ -853,6 +871,20 @@ header {
             }
             .card_adventure {
                 padding: 20px;
+            }
+        }
+    }
+
+    @media (max-width: 600px) {
+        .card_adventure_wrapper {
+            .card_adventure {
+                border-radius: 8px 32px 8px 8px;
+                & > h3 {
+                    font-size: 1.1rem;
+                }
+                & > p {
+                    margin: 10px 0 0 0;
+                }
             }
         }
     }
@@ -1090,6 +1122,9 @@ header {
 
             p {
                 margin: 22px 0;
+                @media (max-width: 600px) {
+                    line-height: 1.5rem;
+                }
             }
 
             .btn-start {
@@ -1146,6 +1181,17 @@ header {
                     text-align: center;
                     width: 100%;
                     padding: 16px;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 600px) {
+        .banner-elite {
+            border-radius: 16px 64px 16px 16px;
+            .banner_content {
+                h3 {
+                    font-size: 1.5rem;
                 }
             }
         }
@@ -1527,6 +1573,12 @@ header {
                 margin: 48px 0;
             }
 
+            @media (max-width: 600px) {
+                p {
+                    font-size: 1rem;
+                }
+            }
+
             .btn-contact-us {
                 background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
                     linear-gradient(275.28deg, $orange -44.76%, #b84022 161.3%);
@@ -1599,6 +1651,15 @@ header {
     @media (max-width: 870px) {
         .team_content {
             margin-top: 60px;
+        }
+    }
+
+    @media (max-width: 600px) {
+        .team_content {
+            border-radius: 16px 64px 16px 16px;
+            &::after {
+                border-radius: 16px 64px 16px 16px;
+            }
         }
     }
 
@@ -1694,11 +1755,11 @@ header {
             }
 
             &.second-faq {
-               overflow: hidden;
-               max-height: 0;
-               opacity: 0;
-               padding: 0;
-               border: 0;
+                overflow: hidden;
+                max-height: 0;
+                opacity: 0;
+                padding: 0;
+                border: 0;
             }
         }
 
@@ -1733,7 +1794,7 @@ header {
         }
         .card_faq_wrapper {
             flex-direction: column;
-            gap:0;
+            gap: 0;
             .card_faq {
                 width: 100%;
                 padding: 16px;
@@ -1830,6 +1891,9 @@ footer {
             line-height: 30px;
             text-align: center;
             margin: 32px 0;
+            @media (max-width: 600px) {
+                font-size: 1.1rem;
+            }
         }
 
         .input {
@@ -1838,6 +1902,9 @@ footer {
                 font-size: 1.25rem;
                 font-weight: 500;
                 display: block;
+                @media (max-width: 600px) {
+                    font-size: 1.1rem;
+                }
             }
 
             input {
@@ -1924,6 +1991,16 @@ footer {
                             padding-right: 0;
                         }
                     }
+
+                    @media (max-width: 600px) {
+                        & > li {
+                            a {
+                                svg {
+                                    height: 25px;
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -1939,6 +2016,9 @@ footer {
             span,
             a {
                 font-size: 1.16rem;
+                @media (max-width: 600px) {
+                    font-size: 1rem;
+                }
             }
 
             .privacy {
