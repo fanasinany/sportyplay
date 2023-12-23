@@ -674,7 +674,8 @@ header nav .menu-burger {
 }
 @media (max-width: 600px) {
   .para_wrapper > div p {
-    font-size: 1.1rem;
+    font-size: 1rem;
+    padding-left: 20px;
   }
 }
 @media (max-width: 1400px) {
